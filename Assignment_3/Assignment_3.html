@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <title>Advanced Registration Form</title>
+     <style>
+          * {
+               box-sizing: border-box;
+               margin: 0;
+               padding: 0;
+          }
+
+          body {
+               font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+               background: linear-gradient(135deg, #667EEA, #764BA2);
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               min-height: 100vh;
+               backdrop-filter: blur(3px);
+               animation: fadeIn 1s ease-in-out;
+          }
+
+          @keyframes fadeIn {
+               from {
+                    opacity: 0;
+                    transform: translateY(20px);
+               }
+
+               to {
+                    opacity: 1;
+                    transform: translateY(0);
+               }
+          }
+
+          .form-container {
+               background: rgba(255, 255, 255, 0.15);
+               padding: 40px;
+               border-radius: 20px;
+               backdrop-filter: blur(15px);
+               box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+               color: #fff;
+               width: 100%;
+               max-width: 600px;
+               transition: transform 0.3s ease;
+          }
+
+          .form-container:hover {
+               transform: scale(1.01);
+          }
+
+          .form-container h2 {
+               text-align: center;
+               margin-bottom: 25px;
+               font-size: 28px;
+               letter-spacing: 1px;
+               color: #F9F9F9;
+          }
+
+          .form-group {
+               margin-bottom: 20px;
+          }
+
+          .form-group label {
+               display: block;
+               margin-bottom: 8px;
+               font-weight: 600;
+               color: #F1F1F1;
+          }
+
+          .form-group input,
+          .form-group select,
+          .form-group textarea {
+               width: 100%;
+               padding: 12px 15px;
+               border: 1px solid rgba(255, 255, 255, 0.3);
+               border-radius: 10px;
+               background: rgba(255, 255, 255, 0.1);
+               color: #fff;
+               font-size: 16px;
+               transition: all 0.3s ease;
+          }
+
+          .form-group input::placeholder,
+          .form-group textarea::placeholder {
+               color: rgba(255, 255, 255, 0.6);
+          }
+
+          .form-group input:focus,
+          .form-group select:focus,
+          .form-group textarea:focus {
+               outline: none;
+               border-color: #A1C4FD;
+               box-shadow: 0 0 0 3px rgba(161, 196, 253, 0.3);
+               background-color: rgba(255, 255, 255, 0.2);
+          }
+
+          .form-group input[type="file"] {
+               padding: 6px;
+               background: transparent;
+          }
+
+          .radio-group,
+          .checkbox-group {
+               display: flex;
+               gap: 20px;
+               flex-wrap: wrap;
+          }
+
+          .radio-group label,
+          .checkbox-group label {
+               display: flex;
+               align-items: center;
+               gap: 6px;
+               cursor: pointer;
+          }
+
+          .form-actions {
+               text-align: center;
+               margin-top: 25px;
+          }
+
+          .form-actions button {
+               background: linear-gradient(to right, #6A11CB, #2575FC);
+               color: white;
+               padding: 14px 28px;
+               font-size: 16px;
+               border: none;
+               border-radius: 12px;
+               cursor: pointer;
+               transition: background 0.3s ease, transform 0.2s ease;
+          }
+
+          .form-actions button:hover {
+               background: linear-gradient(to right, #2575FC, #6A11CB);
+               transform: scale(1.05);
+          }
+
+          .note {
+               font-size: 13px;
+               color: #ddd;
+               margin-top: 5px;
+          }
+
+          /* Responsive */
+          @media (max-width: 600px) {
+               .form-container {
+                    padding: 30px 20px;
+               }
+
+               .radio-group,
+               .checkbox-group {
+                    flex-direction: column;
+                    gap: 10px;
+               }
+          }
+     </style>
+</head>
+
+<body>
+     <div class="form-container">
+          <h2>User Registration Form</h2>
+          <form>
+               <div class="form-group">
+                    <label for="fullName">Full Name *</label>
+                    <input type="text" id="fullName" name="fullName" required placeholder="Enter your full name" />
+               </div>
+               <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email" />
+               </div>
+               <div class="form-group">
+                    <label for="password">Password *</label>
+                    <input type="password" id="password" name="password" required minlength="6"
+                         placeholder="Enter a strong password" />
+               </div>
+               <div class="form-group">
+                    <label for="dob">Date of Birth *</label>
+                    <input type="date" id="dob" name="dob" required />
+               </div>
+               <div class="form-group">
+                    <label>Gender *</label>
+                    <div class="radio-group">
+                         <label><input type="radio" name="gender" value="male" required /> Male</label>
+                         <label><input type="radio" name="gender" value="female" required /> Female</label>
+                         <label><input type="radio" name="gender" value="other" required /> Other</label>
+                    </div>
+               </div>
+               <div class="form-group">
+                    <label for="country">Country *</label>
+                    <select id="country" name="country" required>
+                         <option value="">Select a country</option>
+                         <option value="us">United States</option>
+                         <option value="uk">United Kingdom</option>
+                         <option value="ca">Canada</option>
+                         <option value="in">India</option>
+                         <option value="au">Australia</option>
+                    </select>
+               </div>
+               <div class="form-group">
+                    <label>Skills</label>
+                    <div class="checkbox-group">
+                         <label><input type="checkbox" name="skills" value="html" /> HTML</label>
+                         <label><input type="checkbox" name="skills" value="css" /> CSS</label>
+                         <label><input type="checkbox" name="skills" value="js" /> JavaScript</label>
+                         <label><input type="checkbox" name="skills" value="react" /> React</label>
+                    </div>
+               </div>
+               <div class="form-group">
+                    <label for="bio">Short Bio</label>
+                    <textarea id="bio" name="bio" rows="4" placeholder="Tell us something about yourself..."></textarea>
+               </div>
+               <div class="form-group">
+                    <label for="profilePic">Profile Picture</label>
+                    <input type="file" id="profilePic" name="profilePic" accept="image/*" />
+                    <div class="note">Accepted formats: .jpg, .png, .jpeg</div>
+               </div>
+               <div class="form-group">
+                    <label><input type="checkbox" required /> I accept the terms and conditions *</label>
+               </div>
+               <div class="form-actions">
+                    <button type="submit">Register</button>
+               </div>
+          </form>
+     </div>
+</body>
+
+</html>
+
+<!-- /Users/mh_mac/Desktop/Assignment_3.png make form using css  -->
