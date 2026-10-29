@@ -51,6 +51,12 @@ Welcome to my official repository! This workspace contains a collection of acade
 │       ├── 🌐 Assignment_3.html
 │       └── 🖼️ Assignment_3.png
 ├── 📁 Shenzhen_Assignments
+│   ├── 📁 RewrittenDivSoup
+│   │   └── 🌐 rewritten.html
+│   ├── 📁 SemanticTags
+│   │   ├── 🌐 index.html
+│   │   ├── 🖼️ ss_1.png
+│   │   └── 🖼️ ss_2.png
 │   └── 📁 ThemePage
 │       ├── 🖼️ image.png
 │       └── 🌐 theme_intro.html
