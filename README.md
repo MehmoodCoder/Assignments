@@ -65,15 +65,22 @@ Welcome to my official repository! This workspace contains a collection of acade
 
 ---
 
-## 🌟 Projects & Assignments Breakdown
+## 📚 Hands-on Projects & Assignments
 
 ### 🏛️ Personal Assignments (`Personal_Assignments/`)
-* **Assignment 1:** A unique contact page built strictly using basic HTML and layout tables (following the constraint of zero `<div>`, zero `<span>`, and zero CSS styling), mimicking GCU Lahore's study abroad portal layout[cite: 1].
-* **Assignment 2:** Advanced HTML, CSS, and responsive styling modules featuring media queries, custom logos, and profile images.
-* **Assignment 3:** Continuous practice files and structured components.
+> *A foundational series of hands-on web projects exploring strict HTML structural constraints, responsive CSS styling techniques, and modular layouts built independently.*
+
+- **Assignment 1:** A unique contact page built strictly using basic HTML and layout tables (following the constraint of zero `<div>`, zero `<span>`, and zero CSS styling), mimicking GCU Lahore's study abroad portal layout.
+- **Assignment 2:** Advanced HTML, CSS, and responsive styling modules featuring media queries, custom logos, and profile images.
+- **Assignment 3:** Continuous practice files and structured components.
+
 
 ### 🇨🇳 Shenzhen Assignments (`Shenzhen_Assignments/`)
-* **ThemePage (`theme_intro.html`):** A custom theme introduction webpage built with semantic formatting, external target-blank links, and an image tribute to my ideal leader, featuring clean code structure.
+> *A collection of coursework and practical exercises completed under the joint DAE Software Technology curriculum by Shenzhen Institute, China & TEVTA, focusing on basic Web Development, web layout structure, designing, responsive CSS styling techniques and semantic markup best practices.*
+
+- **Assignment No. 1 — ThemePage (`ThemePage/theme_intro.html`):** A custom theme introduction webpage built with semantic formatting, external target-blank links, and an image tribute to my ideal leader, featuring clean code structure.
+- **Assignment No. 2 — SemanticTags (`SemanticTags/index.html`):** A bonus webpage showcasing discovered HTML5 semantic elements (`nav`, `header`) from live website sources backed by screenshots, complete with personal portfolio and GitHub links.
+- **Assignment No. 3 — RewrittenDivSoup (`RewrittenDivSoup/rewritten.html`):** A semantic restructuring exercise replacing unnecessary `<div>` soup containers with clean and proper HTML5 semantic tags (`header`, `nav`, `main`, `section`, `article`, `footer`).
 
 ---
 
