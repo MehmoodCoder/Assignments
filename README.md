@@ -7,7 +7,7 @@ Welcome to my official repository! This workspace contains a collection of acade
 ## 👨‍💻 Developer Profile
 * **Name:** Mehmood Hassan
 * **Location:** Iqbal Town, Lahore, Pakistan
-* **Education:** Computer Science student / DAE Software Technology (TEVTA & Shenzhen Institute)
+* **Education:** Computer Science student / DAE Software Technology (TEVTA & Shenzhen Institute, China)
 * **Specialization:** Full-Stack MERN Stack & Python Developer
 
 ---
